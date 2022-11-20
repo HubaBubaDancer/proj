@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F1UdqGh4QzVGS2Dw7CBNj3M+AQRTeM33ir5x2o8EO/t7va8ZsZmZ2Gs8S4reU4njotZWfV0C5mddHo4cA3cosQ==",
+  "dgSpecHash": "YSu6CFZi1rwgigfuipIhejn9n2hRIOYjmX41hy4XU1QyUa9QxVrpl2CqNTae+nQrn733WIehxuS567DPW/53Wg==",
   "success": true,
-  "projectFilePath": "V:\\sdfsdfdsfsdfdsfdffdsfsdfsdfdsfsfsd\\proj\\proj.csproj",
+  "projectFilePath": "V:\\proj\\proj\\proj.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Irobo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Irobo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

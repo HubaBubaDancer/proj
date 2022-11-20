@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "V:\\sdfsdfdsfsdfdsfdffdsfsdfsdfdsfsfsd\\proj\\proj.csproj": {}
+    "V:\\proj\\proj\\proj.csproj": {}
   },
   "projects": {
-    "V:\\sdfsdfdsfsdfdsfdffdsfsdfsdfdsfsfsd\\proj\\proj.csproj": {
+    "V:\\proj\\proj\\proj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "V:\\sdfsdfdsfsdfdsfdffdsfsdfsdfdsfsfsd\\proj\\proj.csproj",
+        "projectUniqueName": "V:\\proj\\proj\\proj.csproj",
         "projectName": "proj",
-        "projectPath": "V:\\sdfsdfdsfsdfdsfdffdsfsdfsdfdsfsfsd\\proj\\proj.csproj",
+        "projectPath": "V:\\proj\\proj\\proj.csproj",
         "packagesPath": "C:\\Users\\Irobo\\.nuget\\packages\\",
-        "outputPath": "V:\\sdfsdfdsfsdfdsfdffdsfsdfsdfdsfsfsd\\proj\\obj\\",
+        "outputPath": "V:\\proj\\proj\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Irobo\\AppData\\Roaming\\NuGet\\NuGet.Config",
