@@ -11,8 +11,6 @@ namespace proj.Data
         public DbSet<Provider> Providers { get; set; } = default!;
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<DocumentModel> DocumentModels { get; set; }
-        public DbSet<InComingModel> InComingModels { get; set; }
 
 
         public ApplicationDbContext()
@@ -26,8 +24,6 @@ namespace proj.Data
             modelBuilder.Entity<Stock>();
             modelBuilder.Entity<Product>()
                 .HasOne<Stock>();
-            modelBuilder.Entity<DocumentModel>();
-            modelBuilder.Entity<InComingModel>();
         }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 

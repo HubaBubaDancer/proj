@@ -26,10 +26,10 @@ namespace proj.Data.Handlers
         {
             _context = context; 
         }
-        
+
         public async Task<List<ProductsNOM>> Handle(GetProductNOMSRequest request, CancellationToken cancellationToken)
         {
-            var products = await _context.ProductsNOMs.ToListAsync();
+            var products = _context.ProductsNOMs.ToList();
             return products;
         }
     }

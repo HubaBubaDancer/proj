@@ -23,31 +23,25 @@ namespace proj.Controllers
         }
 
         [HttpGet("get-all-product-noms")]
-        public async Task<ActionResult<List<ProductsNOM>>> GetAllProductNoMs()
+        public Task<List<ProductsNOM>> GetAllProductNoMs()
         {
-            var result = await _mediator.Send(new GetProductNOMSRequest());
-            if (result.Any())
-            {
-                return result;
-            }
-
-            return BadRequest("Products don't exist");
+            var result = _mediator.Send(new GetProductNOMSRequest());
+            
+            return result;
         }
 
         [HttpPost("create-product-nom")]
-        public async Task<IActionResult> CreateProductNom(CreateProductNOMRequest request)
+        public Task<ProductsNOM> CreateProductNom(CreateProductNOMRequest request)
         {
-            var result = _mediator.Send(request).Result;
-            return Ok(result);
+            var result = _mediator.Send(request);
+            return result;
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteProductNoM(DeleteProductNOMRequest request)
+        public Task<ProductsNOM> DeleteProductNoM(DeleteProductNOMRequest request)
         {
             var result = _mediator.Send(request);
-            return Ok(result);
+            return result;
         }
-
-
     }
 }
