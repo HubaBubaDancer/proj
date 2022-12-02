@@ -21,29 +21,28 @@ public class StockController : Controller
     public async Task<Stock> CreateStock(CreateStockRequest request)
     {
         var stock = await _mediator.Send(request);
-
         return stock;
     }
 
     [HttpGet("get-all")]
-    public async Task<ActionResult<List<Stock>>> GetStocks()
+    public async Task<List<Stock>> GetStocks()
     {
         var stocks = _mediator.Send(new GetStocksRequest()).Result;
         return stocks;
     }
 
     [HttpGet("get-by-id")]
-    public async Task<IActionResult> GetStock(GetStockRequest request)
+    public async Task<Stock> GetStock([FromQuery]Guid id)
     {
-        var stock = _mediator.Send(request).Result;
-        return Ok(stock);
+        var stock = _mediator.Send(new GetStockRequest(id)).Result;
+        return stock;
     }
 
     [HttpDelete]
-    public async Task<IActionResult> DeleteStock(DeleteStockRequest request)
+    public async Task<Stock> DeleteStock([FromQuery]DeleteStockRequest request)
     {
         var stock = _mediator.Send(request);
-        return Ok(stock);
+        return stock.Result;
     }
 
 
