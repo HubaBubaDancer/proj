@@ -25,9 +25,9 @@ public class ProductsInStockController : Controller
     }
 
     [HttpGet("get-by-id")]
-    public async Task<IActionResult> GetProduct(GetProductRequest request)
+    public async Task<IActionResult> GetProduct([FromQuery] Guid id)
     {
-        var product = _mediator.Send(request).Result;
+        var product = _mediator.Send(new GetProductRequest(id)).Result;
         return Ok(product);
     }
 
